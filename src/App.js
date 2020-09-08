@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Story_Card from './Story_Card.js';
-import Story_Card_C from './Story_Card_C';
+import SocialFollow from './SocialFollow.js';
 
 function App() {
   return (
     <div className="App">  
-        <Story_Card_C />
         <Story_Card />
     </div>
   );
