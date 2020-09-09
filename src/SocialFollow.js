@@ -8,7 +8,7 @@ import './SocialFollow.css';
 function SocialFollow() {
     return (
      
-      <div className="App">  
+      <div >  
           <Container style={{width: '24rem'}}>
                 <Row className="justify-content-center mr-3">
                     <Col xs={5} >

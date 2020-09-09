@@ -7,17 +7,17 @@ function NavStory() {
     return (
      
       <div>  
-            <Navbar expand="lg" className="mb-4 navback">
+            <Navbar expand="lg" className=" navback " >
                 <Navbar.Brand href="#home" id='nav-brand' >StoryTellers</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">STORIES</Nav.Link>
-                        <Nav.Link href="#link">STORYTELLERS</Nav.Link>
+                        <Nav.Link href="#home" id="nav-link">STORIES</Nav.Link>
+                        <Nav.Link href="#link" id="nav-link">STORYTELLERS</Nav.Link>
                         <NavDropdown title="Categories" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Personal</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Inspirational</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Daily Encounter</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1" id="nav-drop-item">Personal</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2" id="nav-drop-item">Inspirational</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3" id="nav-drop-item">Daily Encounter</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Rising Stories</NavDropdown.Item>
                         </NavDropdown>

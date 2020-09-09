@@ -1,13 +1,25 @@
+/*
 .navback {
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #4B79A1;  /* fallback for old browsers */
+  /*  background: -webkit-linear-gradient(to bottom, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */ 
+  /*  background: linear-gradient(to bottom, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /*
 }
-
+*/
 #nav-brand{
     font-family: 'dancing script';
     font-weight: 700;
-    color: white;
+    color: #065380;
     font-size: 2rem;
+}
+#nav-link{
+    color: #065380;
+}
+#nav-drop-item{
+    color: #065380;
+}
+#basic-nav-dropdown{
+    color: #065380;
+}
+#nav-drop-item{
+    color: black;
 }
