@@ -10,7 +10,7 @@ import SocialFollow from './SocialFollow.js'
 function Story_Card() {
   return (
     <div>
-      <Card className="ml-5">
+      <Card className='mx-auto'>
         <div className="clearfix ">
           <Card.Img  variant="top" src="https://mdbootstrap.com/img/Others/documentation/1.jpg" />
           <div className="title-hlight"></div>
