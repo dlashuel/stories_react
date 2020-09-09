@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Nav, Navbar, NavLink, Form, FormControl, Button, NavbarBrand, NavDropdown} from 'react-bootstrap';
-
-import './SocialFollow.css';
+import './Nav.css';
 
 function NavStory() {
     return (
      
       <div>  
-            <Navbar bg="light" expand="lg" className="mb-4">
-                <Navbar.Brand href="#home">StoryTellers</Navbar.Brand>
+            <Navbar expand="lg" className="mb-4 navback">
+                <Navbar.Brand href="#home" id='nav-brand' >StoryTellers</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
