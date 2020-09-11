@@ -23,6 +23,7 @@ function NavStory() {
                         </NavDropdown>
                     </Nav>
                     <Form inline>
+                        <Nav.Link className="mr-5 h4 pt-3" href="#home" id="nav-link">Sign In</Nav.Link>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-success">Search</Button>
                     </Form>

@@ -38,10 +38,11 @@ function Footer() {
                       </div>  
                     </Col>
                 </Row>
-                <div className=" text-center py-3 copy-right">© 2020 Copyright:
-                  <a className='' href="#">Lashuel Design</a>
-                </div>
             </Container>
+            <hr className='copy-right-hr'/>
+            <div className=" text-center py-3 copy-right">© 2020 Copyright:
+              <a className='' href="#">Lashuel Design</a>
+            </div>
       </div>
         
 
