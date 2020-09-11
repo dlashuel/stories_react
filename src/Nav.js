@@ -7,7 +7,7 @@ function NavStory() {
     return (
      
       <div>  
-            <Navbar expand="lg" className=" navback " >
+            <Navbar expand="lg" className=" navback mx-4" >
                 <Navbar.Brand href="#home" id='nav-brand' >StoryTellers</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
