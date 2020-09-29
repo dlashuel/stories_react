@@ -39,7 +39,7 @@
 }
 
 #header{
-  background-image: url('./images/17.png');
+  background-image: url('./17.png');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -75,4 +75,8 @@ hr {
   font-size: 1.7rem;
   background: #05456B;
   font-family: 'dancing script';
+}
+.header-button:hover{
+  color:#05456B;
+  background: white;
 }

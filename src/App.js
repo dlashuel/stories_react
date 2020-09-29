@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, ContainerFluid, Row, Col, Card, Jumbotron, Button} from 'react-bootstrap';
 import './App.css';
-import Story_Card from './Story_Card.js';
+import Card_list from './Card_List.js';
 import SocialFollow from './SocialFollow.js';
 import NavStory from './Nav.js';
 import Footer from './Footer.js';
+import { stories_data }  from "./stories_list.js";
+
 
 function App() {
-  return (
+  return (<Router>
     <div className="App"> 
 
         <NavStory />
@@ -27,35 +30,14 @@ function App() {
               <Button className="header-button" variant="outline-primary">Read Stories</Button>
             </Col>
           </Row>
-          
         </Container>
-
-        <Container fluid={true} >
+        <Container fluid={true}>
           <Row>
-            <Col xs={12} md={6} lg={4} className=''>
-              <Story_Card />
-            </Col>
-            <Col xs={12} md={6} lg={4} className=''>
-              <Story_Card />
-            </Col>
-            <Col xs={12} md={6} lg={4} className=''>
-              <Story_Card />
-            </Col>
-
-            <Col xs={12} md={6} lg={4} className=''>
-              <Story_Card />
-            </Col>
-            <Col xs={12} md={6} lg={4} className=''>
-              <Story_Card />
-            </Col>
-            <Col xs={12} md={6} lg={4} className=''>
-              <Story_Card />
-            </Col>
+            <Card_list data={ stories_data }/>
           </Row>
         </Container>
-
         <Footer />
-    </div>
+    </div></Router>
   );
 }
 
