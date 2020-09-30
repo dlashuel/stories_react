@@ -1,10 +1,9 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaHeart, FaUsers } from "react-icons/fa";
 import { Container, Row, Col, Card} from 'react-bootstrap';
 import './Story_Card.css';
-import Shak from './shak.png';
-import SocialFollow from './SocialFollow.js';
+import SocialFollow from '../socialFollow/SocialFollow.js';
 
 
 

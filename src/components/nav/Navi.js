@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Nav, Navbar, NavLink, Form, FormControl, Button, NavbarBrand, NavDropdown} from 'react-bootstrap';
-import './Nav.css';
+import './Navi.css';
+import Login from '../login/Login';
 
-function NavStory() {
+function Navi() {
     return (
-     
-      <div>  
+      <div> 
             <Navbar expand="lg" className=" navback mx-4" >
                 <Navbar.Brand href="#home" id='nav-brand' >StoryTellers</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,17 +24,21 @@ function NavStory() {
                         </NavDropdown>
                     </Nav>
                     <Form inline>
-                        <Nav.Link className="mr-5 h4 pt-3" href="#home" id="nav-link">Sign In</Nav.Link>
+                        <Link to="/login">
+                            <Nav.Link className="mr-5 h4 pt-3" href="#home" id="nav-link">Sign In</Nav.Link>
+                        </Link>
+                        <Link to="/signup">
+                            <Nav.Link className="mr-5 h4 pt-3" href="#home" id="nav-link">Sign Up</Nav.Link>
+                        </Link>
                         <FormControl type="text" placeholder="Search for stories and storytellers" className="mr-sm-2" />
                         <Button variant="outline-success">Search</Button>
                     </Form>
                 </Navbar.Collapse>
-            </Navbar>
-      </div>
-        
+            </Navbar>   
+      </div>    
 
     );
   }
 
 
-export default NavStory;
+export default Navi;
