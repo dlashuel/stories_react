@@ -1,72 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
-* {
-  box-sizing: border-box;
-}
-body {
-  min-height: 100vh;
-  display: flex;
-  font-weight: 400;
-  font-family: 'Fira Sans', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-h1,h2,h3,h4,h5,h6,label,span {
-  font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
-}
-
-body, html, .App, #root, .auth-wrapper {
+.container-login{
+  background-color: #03456B;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
-.navbar-light {
-  background-color: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-}
-
-.auth-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-}
-
-.auth-inner {
-  width: 450px;
+.login-page{
+  width: 360px;
+  padding: 8% 0 0;
   margin: auto;
-  background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
-  border-radius: 15px;
-  transition: all .3s;
 }
-
-.auth-wrapper .form-control:focus {
-  border-color: #167bff;
-  box-shadow: none;
-}
-
-.auth-wrapper h3 {
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
   text-align: center;
-  margin: 0;
-  line-height: 1;
-  padding-bottom: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+} 
+.login-title {
+  color: #03456B;
+  font-size: 1.6rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.custom-control-label {
-  font-weight: 400;
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #03456B;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #03456B;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
 }
 
-.forgot-password,
-.forgot-password a {
-  text-align: right;
-  font-size: 13px;
-  padding-top: 10px;
-  color: #7f7d7d;
-  margin: 0;
-}
-
-.forgot-password a {
-  color: #167bff;
-}

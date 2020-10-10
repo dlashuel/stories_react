@@ -1,10 +1,11 @@
-/*
+
 .navback {
-    background: #4B79A1;  /* fallback for old browsers */
-  /*  background: -webkit-linear-gradient(to bottom, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */ 
-  /*  background: linear-gradient(to bottom, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /*
+    width: 100%;
+    background: white;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to bottom, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-*/
+
 #nav-brand{
     font-family: 'dancing script';
     font-weight: 700;
@@ -23,4 +24,3 @@
 #nav-drop-item{
     color: black;
 }
-

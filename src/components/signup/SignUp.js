@@ -1,38 +1,24 @@
 import React, { Component } from "react";
 import './SignUp.css';
-
+import { Link } from "react-router-dom";
 
 export default class SignUp extends Component {
     render() {
         return (
-            <form>
-                <h3>Sign Up</h3>
-
-                <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+            <div className='container-signup'>
+                <div className='login-page'>
+                    <div className='form'>
+                        <form class="register-form">
+                            <div className='signup-title'>Sign Up</div>
+                            <input type="text" placeholder="name"/>
+                            <input type="password" placeholder="password"/>
+                            <input type="text" placeholder="email address"/>
+                            <button>create</button>
+                            <p className="message">Already registered? <Link to='/login'><a href="#">Sign In</a></Link></p>
+                        </form>
+                    </div>
                 </div>
-
-                <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
-                </div>
-
-                <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
-
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
-                <p className="forgot-password text-right">
-                    Already registered <a href="#">sign in?</a>
-                </p>
-            </form>
+            </div>
         );
     }
 }

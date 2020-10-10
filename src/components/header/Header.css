@@ -1,0 +1,20 @@
+.sub-header{
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .header-button{
+    color: white;
+    border:  none;
+    font-size: 1.7rem;
+    background: #05456B;
+    font-family: 'dancing script';
+  }
+  .header-button:hover{
+    color:#05456B;
+    background: white;
+  }
+  hr{
+    border-top: 5px solid white;
+    width: 5%;
+  }
